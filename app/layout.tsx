@@ -1,23 +1,21 @@
-import type { Metadata } from "next";
+import React from 'react'
+import type { Metadata } from 'next'
 
-import "./globals.css";
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Alex Portfolio Collection",
-  description: "Minimalist JS Master Portfolio Collection",
-};
+    title: 'Alex Portfolio Collection',
+    description: 'Minimalist JS Master Portfolio Collection',
+}
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body
-      >
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body>{children}</body>
+        </html>
+    )
 }

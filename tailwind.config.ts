@@ -1,19 +1,20 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
+import { DEFAULT_CIPHERS } from 'tls'
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    content: [
+        './pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './components/**/*.{js,ts,jsx,tsx,mdx}',
+        './app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    theme: {
+        extend: {
+            colors: {
+                DEFAULT: '#000',
+                100: '#000319',
+            },
+        },
     },
-  },
-  plugins: [],
-};
-export default config;
+    plugins: [],
+}
+export default config
